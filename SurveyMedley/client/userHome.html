@@ -1,0 +1,43 @@
+<template name="userHome">
+   {{> navbar}}
+   {{> surveyForm}}
+
+   <div id="menu" class="update-header">
+      <div class="panel list-group">
+       <a href="#" class="list-group-item" data-toggle="collapse" data-target="#ics" data-parent="#menu">Incompleted <span class="label label-info">{{IncompletedSurveysCount}}</span><span class="glyphicon glyphicon-th pull-right"></span></a>
+          <div id="ics" class="sublinks collapse">
+             {{#each IncompletedSurveys}}
+             <div class="input-group input-group-sm input-group-custom-margin">
+                 <span class="input-group-addon" id="cid">Case</span>
+                 <input type="text" class="form-control" placeholder="{{caseId}}" aria-describedby="cid">
+                 <span class="input-group-addon" id="ctitle">Title</span>
+                 <input type="text" class="form-control" placeholder="{{issueTitle}}" aria-describedby="ctitle">
+                 <span class="input-group-addon" id="pname">Product</span>
+                 <input type="text" class="form-control" placeholder="{{productName}}" aria-describedby="pname">
+                 <span class="input-group-addon" id="tname">Technician</span>
+                 <input type="text" class="form-control" placeholder="{{technician}}" aria-describedby="tname">
+                 <span class="input-group-addon js-give-feedback" id="fbtn" name="{{_id}}">Feedback</span>
+               </div>
+               {{/each}}
+          </div>
+       </div>
+      <div class="panel list-group">
+       <a href="#" class="list-group-item" data-toggle="collapse" data-target="#ncs" data-parent="#menu">Not Started <span class="label label-info">{{NotStartedSurveysCount}}</span><span class="glyphicon glyphicon-warning-sign pull-right"></span></a>
+          <div id="ncs" class="sublinks collapse">
+             {{#each NotStartedSurveys}}
+             <div class="input-group input-group-sm input-group-custom-margin">
+                 <span class="input-group-addon" id="cid">Case</span>
+                 <input type="text" class="form-control" placeholder="{{caseId}}" aria-describedby="cid">
+                 <span class="input-group-addon" id="ctitle">Title</span>
+                 <input type="text" class="form-control" placeholder="{{issueTitle}}" aria-describedby="ctitle">
+                 <span class="input-group-addon" id="pname">Product</span>
+                 <input type="text" class="form-control" placeholder="{{productName}}" aria-describedby="pname">
+                 <span class="input-group-addon" id="tname">Technician</span>
+                 <input type="text" class="form-control" placeholder="{{technician}}" aria-describedby="tname">
+                 <span class="input-group-addon js-give-feedback" id="fbtn" name="{{_id}}">Feedback</span>
+               </div>
+               {{/each}}
+          </div>
+       </div>
+    </div>
+</template>

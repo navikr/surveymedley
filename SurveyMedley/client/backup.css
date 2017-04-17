@@ -1,0 +1,204 @@
+/*.intro-header {
+    padding-top: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(intro-bg.jpg) no-repeat bottom center scroll;
+    background-size: cover;
+    width:100%;
+}
+
+/*.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 30%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+@media (min-width: 768px){
+.intro-header {
+    height: 100%;
+    padding: 0;
+}
+}
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    /*.intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}*/
+/* CSS declarations go here */
+/*footer {
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+.modal
+{
+    opacity:0.8 !important;
+    text-align: center;
+    padding: 0!important;
+}
+
+#footer {
+  width: 100%;
+  float: left;
+  background: #222831;
+  padding: 7em 0 40px;
+}
+#footer p {
+  color: rgba(255, 255, 255, 0.3);
+}
+#footer .section-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#footer .float {
+  float: left;
+  margin-right: 10%;
+}
+#footer ul {
+  padding: 0;
+  margin: 0;
+}
+#footer ul li {
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+#footer ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none !important;
+}
+#footer ul li a:hover {
+  color: #fff;
+}
+#footer .contact-info {
+  margin: 0 0 60px 0;
+  padding: 0;
+}
+#footer .contact-info li {
+  list-style: none;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding-left: 40px;
+}
+#footer .contact-info li i {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.7);
+}
+#footer .contact-info li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer .contact-form .form-group input[type="name"],
+#footer .contact-form .form-group input[type="text"],
+#footer .contact-form .form-group input[type="email"],
+#footer .contact-form .form-group textarea {
+  font-size: 16px;
+}
+#footer .contact-form .form-group input[type="name"]::-webkit-input-placeholder,
+#footer .contact-form .form-group input[type="text"]::-webkit-input-placeholder,
+#footer .contact-form .form-group input[type="email"]::-webkit-input-placeholder,
+#footer .contact-form .form-group textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer .contact-form .form-group input[type="name"]:-moz-placeholder,
+#footer .contact-form .form-group input[type="text"]:-moz-placeholder,
+#footer .contact-form .form-group input[type="email"]:-moz-placeholder,
+#footer .contact-form .form-group textarea:-moz-placeholder {
+
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer .contact-form .form-group input[type="name"]::-moz-placeholder,
+#footer .contact-form .form-group input[type="text"]::-moz-placeholder,
+#footer .contact-form .form-group input[type="email"]::-moz-placeholder,
+#footer .contact-form .form-group textarea::-moz-placeholder {
+
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer .contact-form .form-group input[type="name"]:-ms-input-placeholder,
+#footer .contact-form .form-group input[type="text"]:-ms-input-placeholder,
+#footer .contact-form .form-group input[type="email"]:-ms-input-placeholder,
+#footer .contact-form .form-group textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer .contact-form .form-group input {
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+#footer .contact-form .form-group textarea {
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+#footer #btn-submit {
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: #FA7E0A !important;
+}
+#footer .copy-right {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 5em;
+  margin-top: 5em;
+}
+#footer .copy-right p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+}
+#footer .copy-right p a {
+  color: rgba(255, 255, 255, 0.5);
+}
+p, ul, ol {
+    margin-bottom: 1.5em;
+    font-size: 18px;
+    color: #848484;
+    font-family: "Roboto", Arial, serif;
+}
+p {
+    margin: 0 0 10px;
+}
+*/

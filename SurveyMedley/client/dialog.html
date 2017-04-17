@@ -1,0 +1,168 @@
+<template name="signup">
+   <div class="modal fade" id="signup_form">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-title">User Registration
+            </div>
+           </div>
+          <div class="modal-body">
+              <form class="js-register-user">
+                    <p>
+                       <input type="email" name="email" placeholder="Email" required="true"/>
+                    </p>
+                    <p>
+                        <input type="text" name="username" placeholder="Username" required="true"/>
+                    </p>
+                    <p>
+                        <input type="text" name="firstname" placeholder="First Name" required="true"/>
+                    </p>
+                    <p>
+                       <input type="text" name="lastname" placeholder="Last Name" required="true"/>
+                    </p>
+                    <p>
+                       <input type="number" name="siteId" placeholder="Site Id" required="true"/>
+                    </p>
+                    <p>
+                        <input type="password" name="pwd" placeholder="Password" required="true"/>
+                    </p>
+                    <p>
+                       <button class="btn btn-success js-register-user-btn">Register</button>
+                    </p>
+
+                </form>
+          </div>
+       </div>
+    </div>
+   </div>
+</template>
+<template name="login">
+   <div class="modal fade" id="login_form">
+
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-title">Sign In
+            </div>
+           </div>
+          <div class="modal-body">
+              <form class="js-login-user">
+                    <p>
+                       <input type="email" name="emailId" placeholder="Email" required="true"/>
+                    </p>
+                    <p>
+                        <input type="password" name="password" placeholder="Password" required="true"/>
+                    </p>
+                    <p>
+                       <button class="btn btn-success js-login-usr-btn">Login</button>
+                    </p>
+
+                </form>
+          </div>
+       </div>
+    </div>
+   </div>
+</template>
+<template name="surveyForm">
+   <div class="modal fade survey-modal" id="survey_form">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header survey-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-title">Feedback
+            </div>
+           </div>
+          <div class="modal-body">
+             <form class="js-survey-form">
+                <table>
+                   {{#with feedbackSurvey}}
+                   <tr>
+                      <td width="60%">
+                        OSAT -
+                      </td>
+                      <td width="10%">
+                        <span id="osatval"></span>
+                      </td>
+                      <td width="30%">
+                        <div class="slider slider-horizontal" id="OSAT">
+                           <div class="slider-track">
+                              <div class="slider-selection" style="left: 0%; width: 50%;"></div>
+                           </div>
+                        </div>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td width="60%">
+                        OSAT with Product Quality -
+                      </td>
+                      <td width="10%">
+                        <span id="osatpval"></span>
+                      </td>
+                      <td width="30%">
+                        <div class="slider slider-horizontal" id="OSATP" >
+                           <div class="slider-track">
+                              <div class="slider-selection" style="left: 0%; width: 10%;"></div>
+                           </div>
+                        </div>
+                      </td>
+                   </tr>
+                   <tr>
+                    <td width="60%">
+                       LTR -
+                    </td>
+                    <td width="10%">
+                       <span id="ltrval"></span>
+                    </td>
+                    <td width="30%">
+                       <div class="slider slider-horizontal" id="LTR" >
+                          <div class="slider-track">
+                             <div class="slider-selection" style="left: 0%; width: 50%;"></div>
+                          </div>
+                       </div>
+                    </td>
+                 </tr>
+                 <tr>
+                  <td width="60%">
+                     Contacting CA Support was easy -
+                  </td>
+                  <td width="10%">
+                     <span id="cseval"></span>
+                  </td>
+                  <td width="30%">
+                     <div class="slider slider-horizontal" id="CSE" >
+                        <div class="slider-track">
+                           <div class="slider-selection" style="left: 0%; width: 50%;"></div>
+                           <input type="text" class="span2" value data-slider-step="1" data-slider-value="3" data-slider-id="GC" data-slider-tooltip="hide" data-slider-handle="round">
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                <td width="60%">
+                   Prompt response -
+                </td>
+                <td width="10%">
+                   <span id="presval"></span>
+                </td>
+                <td width="30%">
+                   <div class="slider slider-horizontal" id="PRES" >
+                      <div class="slider-track">
+                        <div class="slider-selection" style="left: 0%; width: 50%;" value="2"></div>
+                      </div>
+                   </div>
+                </td>
+             </tr>
+             {{/with}}
+                </table>
+                <p>
+                   <button class="btn btn-info js-survey-save-btn">&nbsp;Save&nbsp;</button>
+                    <button class="btn btn-success js-survey-submit-btn">Submit</button>
+                </p>
+               </form>
+          </div>
+       </div>
+    </div>
+   </div>
+</template>
